@@ -1,0 +1,158 @@
+.alert-center {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  max-height: 600px;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.alert-center:hover {
+  box-shadow: 0 6px 16px rgba(20, 184, 166, 0.12);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #0d9488;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.no-alerts {
+  text-align: center;
+  padding: 40px;
+  color: #718096;
+  font-size: 1.1rem;
+}
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.alert-item {
+  background: #f7fafc;
+  border-radius: 8px;
+  padding: 16px;
+  border-left: 4px solid #e2e8f0;
+  transition: all 0.3s;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alert-item:hover {
+  background: #edf2f7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.alert-type-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.severity-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.alert-type {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 1rem;
+}
+
+.acknowledge-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acknowledge-btn:hover {
+  background: #45a049;
+  transform: scale(1.1);
+}
+
+.alert-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.alert-resident {
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.alert-resident strong {
+  color: #2d3748;
+}
+
+.alert-description {
+  color: #718096;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.alert-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.alert-confidence {
+  color: #0891b2;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.alert-time {
+  color: #a0aec0;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .alert-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+

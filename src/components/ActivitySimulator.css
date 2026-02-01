@@ -1,0 +1,114 @@
+.activity-simulator {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.activity-simulator:hover {
+  box-shadow: 0 6px 16px rgba(20, 184, 166, 0.12);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #0d9488;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.simulator-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.resident-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resident-selector label {
+  font-weight: 500;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.resident-dropdown {
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  color: #2d3748;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.resident-dropdown:hover {
+  border-color: #14b8a6;
+}
+
+.resident-dropdown:focus {
+  outline: none;
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+}
+
+.event-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.event-btn {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: 'Inter', sans-serif;
+}
+
+.event-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event-btn:active {
+  transform: translateY(0);
+}
+
+.event-btn.normal {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  border-radius: 12px;
+}
+
+.event-btn.fall {
+  background: linear-gradient(135deg, #E53935 0%, #d32f2f 100%);
+  border-radius: 12px;
+}
+
+.event-btn.no-movement {
+  background: linear-gradient(135deg, #FF9800 0%, #f57c00 100%);
+  border-radius: 12px;
+}
+
+.event-btn.medication {
+  background: linear-gradient(135deg, #FF9800 0%, #f57c00 100%);
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .event-buttons {
+    grid-template-columns: 1fr;
+  }
+}
+
